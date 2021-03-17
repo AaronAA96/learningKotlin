@@ -1,4 +1,4 @@
-package com.aaron.learningkotlin
+package com.aaron.learningKotlin
 
 import org.junit.Test
 

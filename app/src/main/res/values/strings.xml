@@ -2,6 +2,8 @@
     <string name="app_name">LearningKotlin</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_home">Hello Aaron</string>
+    <string name="title_welcome_text">Welcome</string>
+    <string name="button_string_title">Press Me</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
 </resources>

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -23,8 +24,10 @@ class HomeFragment : Fragment() {
             ViewModelProvider(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
         val textView: TextView = root.findViewById(R.id.text_home)
+        val button_string_title = root.findViewById<Button>(R.id.button_string_title)
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
+            button_string_title.text = it
         })
         return root
     }
